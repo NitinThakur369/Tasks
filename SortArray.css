@@ -1,0 +1,37 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+#inputForm {
+    margin-bottom: 20px;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
