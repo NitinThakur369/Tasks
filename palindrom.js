@@ -1,19 +1,11 @@
-function checkPalindrome(string) {
-
-    const len = string.length;
-
-    for (let i = 0; i < len / 2; i++) {
-
-        if (string[i] !== string[len - 1 - i]) {
-            return 'It is not a Palindrome';
-        }
+function checkPalindrome() {
+    const input = document.getElementById("input").value.toLowerCase();
+    const reversedInput = input.split("").reverse().join("");
+  
+    if (input === reversedInput) {
+      document.getElementById("result").innerText = `"${input}" is a palindrome!`;
+    } else {
+      document.getElementById("result").innerText = `"${input}" is not a palindrome.`;
     }
-    return 'It is a Palindrome';
-}
-
-
-function Palindrome_function(){
-    var data = document.getElementById("input").value;
-    const ans = checkPalindrome(data);
-    document.getElementById("ans").innerHTML = ans;
   }
+  
